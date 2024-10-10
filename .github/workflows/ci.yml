@@ -1,11 +1,11 @@
-name: CI workflow
+name: CI Workflow
 
 on: push
 
 jobs:
   build:
-  runs-on: ubuntu-latest
-    steps:
+    runs-on: ubuntu-latest
+    steps
       - run: make setup
       - run: make lint
       - run: make test
