@@ -1,0 +1,10 @@
+name: CI workflow
+
+on: push
+
+jobs:
+  build:
+    steps:
+      -run: make setup
+      -run: make lint
+      -run: make test
